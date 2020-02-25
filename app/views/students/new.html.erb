@@ -1,1 +1,9 @@
 <!-- Create your form here -->
+<h1>Student Form</h1>
+<%= form_tag @student do %>
+    <%= label_tag(:first_name, "Given Name:") %>
+    <%= text_field_tag(:first_name) %>
+    <%= label_tag(:last_name, "Family Name:") %>
+    <%= text_field_tag(:last_name) %>
+    <%= submit_tag("Submit Student") %>
+<% end %>
